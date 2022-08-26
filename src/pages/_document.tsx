@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Dr. Danilo Antunes é um cirurgião dentista especializado em implantes dentários e periodontia. Atende no bairro de Funcionários, em Belo Horizonte."
+            content="Dr. Rosane Lage. Tratamento odontológico especializado em endodontia com microscopia operatória no bairro Funcionários, Belo Horizonte."
           />
           <meta
             name="keywords"

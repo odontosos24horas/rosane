@@ -70,12 +70,12 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'ESPECIALIDADES',
     children: [
       {
-        label: 'Dr. Danilo',
-        href: '/especialidades/danilo'
-      },
-      {
         label: 'Dra. Rosane',
         href: '/especialidades/rosane'
+      },
+      {
+        label: 'Dr. Danilo',
+        href: '/especialidades/danilo'
       }
     ]
   },
@@ -90,10 +90,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'TRATAMENTOS',
     href: '/tratamentos'
-  },
-  {
-    label: 'VÍDEOS',
-    href: '/videos'
   },
   {
     label: 'CONTATO',
@@ -236,7 +232,7 @@ const NextHeader = () => {
       <Container maxW="container.xl">
         <HStack color={'gray.600'} spacing="24px" minH="100px" align={'center'} mt={2}>
           <Box w={'250px'}>
-            <NextLink href={'/'}>
+            {/* <NextLink href={'/'}>
               <a>
                 <Image
                   src="/images/logos/logo_header.svg"
@@ -246,17 +242,17 @@ const NextHeader = () => {
                   layout="fixed"
                 />
               </a>
-            </NextLink>
-            {/* <NextLink href={'/'}>
+            </NextLink> */}
+            <NextLink href={'/'}>
               <a>
                 <Image
                   src="/images/logos/logo_rosane.svg"
                   alt="Logo Dra Rosane Lage Lacerda"
-                  width={250}
-                  height={42}
+                  width={289}
+                  height={75}
                 />
               </a>
-            </NextLink> */}
+            </NextLink>
           </Box>
           <Box display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
