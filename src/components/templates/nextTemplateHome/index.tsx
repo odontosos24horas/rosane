@@ -30,6 +30,19 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         </Heading>
       </Center> */}
       <NextCallToAction
+        id={'rosane'}
+        title={nextCallToActionItems[3].title}
+        text={nextCallToActionItems[3].text}
+        image={nextCallToActionItems[3].image}
+        textButton={nextCallToActionItems[3].textButton}
+        directionMd={nextCallToActionItems[3].directionMd}
+        width={nextCallToActionItems[3].width}
+        height={nextCallToActionItems[3].height}
+        url={nextCallToActionItems[3].url}
+        content={nextCallToActionItems[3].content}
+        background={nextCallToActionItems[3].background}
+      />
+      <NextCallToAction
         id={'danilo'}
         title={nextCallToActionItems[2].title}
         text={nextCallToActionItems[2].text}
@@ -42,19 +55,6 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         content={nextCallToActionItems[2].content}
         background={nextCallToActionItems[2].background}
         directionBase={nextCallToActionItems[2].directionBase}
-      />
-      <NextCallToAction
-        id={'rosane'}
-        title={nextCallToActionItems[3].title}
-        text={nextCallToActionItems[3].text}
-        image={nextCallToActionItems[3].image}
-        textButton={nextCallToActionItems[3].textButton}
-        directionMd={nextCallToActionItems[3].directionMd}
-        width={nextCallToActionItems[3].width}
-        height={nextCallToActionItems[3].height}
-        url={nextCallToActionItems[3].url}
-        content={nextCallToActionItems[3].content}
-        background={nextCallToActionItems[3].background}
       />
       <NextCallToAction
         id={'odontologia'}

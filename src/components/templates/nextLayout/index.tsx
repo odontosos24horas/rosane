@@ -14,9 +14,9 @@ type Props = {
 
 const NextLayout = ({
   children,
-  title = 'Dr. Danilo Antunes',
-  description = 'Dr. Danilo Antunes é um cirurgião dentista especializado em implantes dentários e periodontia. Atende no bairro de Funcionários, em Belo Horizonte',
-  nextSocialNetwork = 'https://api.whatsapp.com/send?phone=553197376623&text=Ol%C3%A1,%20Dr.%20Danilo.'
+  title = 'Dr. Rosane Lage',
+  description = 'Dr. Rosane Lage. Tratamento odontológico especializado em endodontia com microscopia operatória no bairro Funcionários, Belo Horizonte.',
+  nextSocialNetwork = 'https://api.whatsapp.com/send?phone=553196890301&text=Ol%C3%A1,%20Dra.%20Rosane.'
 }: PropsWithChildren<Props>) => {
   return (
     <>

@@ -70,12 +70,12 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'ESPECIALIDADES',
     children: [
       {
-        label: 'Dr. Danilo',
-        href: '/especialidades/danilo'
-      },
-      {
         label: 'Dra. Rosane',
         href: '/especialidades/rosane'
+      },
+      {
+        label: 'Dr. Danilo',
+        href: '/especialidades/danilo'
       }
     ]
   },
@@ -90,10 +90,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'TRATAMENTOS',
     href: '/tratamentos'
-  },
-  {
-    label: 'VÍDEOS',
-    href: '/videos'
   },
   {
     label: 'CONTATO',
