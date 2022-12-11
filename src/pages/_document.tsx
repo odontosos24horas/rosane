@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="keywords"
-            content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH"
+            content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH, tratamento de canal com microscópio, tratamento de canal complexo, dor de dente, canal de dente, dentista de canal"
           />
           <link rel="icon" href="/favicon.png" />
           {/* <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-PPHPCBH" />
