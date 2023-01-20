@@ -14,24 +14,28 @@ export default class MyDocument extends Document {
             content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH, tratamento de canal com microscópio, tratamento de canal complexo, dor de dente, canal de dente, dentista de canal"
           />
           <link rel="icon" href="/favicon.png" />
-          {/* <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-PPHPCBH" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TPK3DCT" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'GTM-PPHPCBH');
+              gtag('config', 'GTM-TPK3DCT');
             `
             }}
-          /> */}
+          />
         </Head>
         <body>
-          {/* <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPHPCBH"
-              height="0" width="0">
-            </iframe>
-          </noscript> */}
+          <noscript>
+            <iframe
+              title="Código do GTM"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-TPK3DCT"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
+          </noscript>
           <Main />
           <NextScript />
         </body>
