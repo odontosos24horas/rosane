@@ -95,10 +95,6 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '/fotos'
   },
   {
-    label: 'CONVÊNIOS',
-    href: '/convenios'
-  },
-  {
     label: 'TRATAMENTOS',
     href: '/tratamentos'
   },
