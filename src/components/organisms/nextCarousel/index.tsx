@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Slider from 'react-slick'
+
+import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 
 export default function NextCarousel() {
   const [slider, setSlider] = useState<Slider | null>(null)
@@ -21,7 +22,12 @@ export default function NextCarousel() {
   ]
 
   return (
-    <Box position={'relative'} height={['340px', '662px']} width={'100%'} overflow={'hidden'}>
+    <Box
+      position={'relative'}
+      height={['340px', '662px']}
+      width={'100%'}
+      overflow={'hidden'}
+    >
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"

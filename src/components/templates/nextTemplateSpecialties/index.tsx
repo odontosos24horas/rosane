@@ -1,15 +1,22 @@
-import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 import React from 'react'
-import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
+
+import Image from 'next/image'
+
+import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
+
+import NextAccordionImage, {
+  NextAccordionImageProps
+} from '../../organisms/nextAccordionImage'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
-import Image from 'next/image'
 
 export type NextTemplateAboutUs = {
   nextCallToActionItems: NextAccordionImageProps
 }
 
-const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs) => {
+const NextTemplateSpecialties = ({
+  nextCallToActionItems
+}: NextTemplateAboutUs) => {
   return (
     <NextLayout>
       <NextAccordionImage
@@ -41,7 +48,9 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
           </GridItem>
           <GridItem colSpan={[7, 5]}>
             <Container maxW="3xl">
-              <NextGridListWithHeading features={nextCallToActionItems.features} />
+              <NextGridListWithHeading
+                features={nextCallToActionItems.features}
+              />
             </Container>
           </GridItem>
         </Grid>

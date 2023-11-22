@@ -1,5 +1,7 @@
 import React from 'react'
+
 import NextTemplateTreatments from '../components/templates/nextTemplateTreatments'
+
 import { treatmentsItems } from '../data/treatments'
 
 export default function NextAgreements() {

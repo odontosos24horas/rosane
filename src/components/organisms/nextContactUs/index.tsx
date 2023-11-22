@@ -1,7 +1,8 @@
 import React from 'react'
-import { Button, Text } from '@chakra-ui/react'
 
 import Link from 'next/link'
+
+import { Button, Text } from '@chakra-ui/react'
 
 const NextContactUs = () => {
   return (
@@ -9,8 +10,8 @@ const NextContactUs = () => {
       <Text color="white">Seja um novo profissional da Odonto S.O.S!</Text>
       <Text color="white">Faça parte da nossa equipe de colaboradores!</Text>
       <Text color="white">
-        Se você se identifica com a nossa empresa e quer trabalhar conosco, envie seu currículo para
-        o e-mail:
+        Se você se identifica com a nossa empresa e quer trabalhar conosco,
+        envie seu currículo para o e-mail:
       </Text>
       <Link
         href={

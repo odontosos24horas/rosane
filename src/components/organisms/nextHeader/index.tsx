@@ -1,6 +1,14 @@
 import React from 'react'
+
 import Image from 'next/image'
 import NextLink from 'next/link'
+
+import {
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon
+} from '@chakra-ui/icons'
 import {
   Box,
   Flex,
@@ -18,7 +26,13 @@ import {
   Heading,
   HStack
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
+
+interface NavItem {
+  label: string
+  subLabel?: string
+  children?: Array<NavItem>
+  href?: string
+}
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
@@ -33,7 +47,11 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text transition={'all .3s ease'} _groupHover={{ color: 'white' }} fontWeight={500}>
+          <Text
+            transition={'all .3s ease'}
+            _groupHover={{ color: 'white' }}
+            fontWeight={500}
+          >
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -52,13 +70,6 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       </Stack>
     </Link>
   )
-}
-
-interface NavItem {
-  label: string
-  subLabel?: string
-  children?: Array<NavItem>
-  href?: string
 }
 
 const NAV_ITEMS: Array<NavItem> = [
@@ -82,10 +93,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'FOTOS',
     href: '/fotos'
-  },
-  {
-    label: 'CONVÊNIOS',
-    href: '/convenios'
   },
   {
     label: 'TRATAMENTOS',
@@ -230,7 +237,13 @@ const NextHeader = () => {
   return (
     <header>
       <Container maxW="container.xl">
-        <HStack color={'gray.600'} spacing="24px" minH="100px" align={'center'} mt={2}>
+        <HStack
+          color={'gray.600'}
+          spacing="24px"
+          minH="100px"
+          align={'center'}
+          mt={2}
+        >
           <Box w={'250px'}>
             {/* <NextLink href={'/'}>
               <a>
@@ -260,7 +273,13 @@ const NextHeader = () => {
           <Box display={{ base: 'flex', md: 'none' }}>
             <IconButton
               onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
               bg={'transparent'}
               color={'next-primary'}
               aria-label={'Toggle Navigation'}

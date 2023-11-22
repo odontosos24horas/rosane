@@ -1,5 +1,15 @@
 import React from 'react'
-import { Box, Center, Container, Heading, Link, Stack, Text } from '@chakra-ui/react'
+
+import {
+  Box,
+  Center,
+  Container,
+  Heading,
+  Link,
+  Stack,
+  Text
+} from '@chakra-ui/react'
+
 import NextLayout from '../components/templates/nextLayout'
 
 const NextHome = () => {
@@ -27,7 +37,10 @@ const NextHome = () => {
                 (31) 3318-8718
               </Heading>
             </Link>
-            <Link href={'https://www.instagram.com/dr.daniloantunes'} color="next-primary">
+            <Link
+              href={'https://www.instagram.com/dr.daniloantunes'}
+              color="next-primary"
+            >
               Instagram Dr. Danilo
             </Link>
           </Stack>
@@ -42,13 +55,17 @@ const NextHome = () => {
                 (31) 2555-2779
               </Heading>
             </Link>
-            <Link href={'https://www.instagram.com/dra.rosane.lage'} color="next-primary">
+            <Link
+              href={'https://www.instagram.com/dra.rosane.lage'}
+              color="next-primary"
+            >
               Instagram Dra. Rosane
             </Link>
           </Stack>
         </Box>
         <Text color="next-primary" fontSize="sm">
-          Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
+          Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
+          30140-190
         </Text>
       </Container>
     </NextLayout>

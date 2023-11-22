@@ -1,5 +1,9 @@
 import React from 'react'
+import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+
+import Image from 'next/image'
 import Link from 'next/link'
+
 import {
   Text,
   Stack,
@@ -15,8 +19,6 @@ import {
   Icon,
   Flex
 } from '@chakra-ui/react'
-import Image from 'next/image'
-import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 
 export interface NextTeamCardProps {
   name: string
@@ -84,7 +86,12 @@ const NextTeamCard = ({
                 <Box p="4">
                   <Link href={linkedin}>
                     <a target="_blank" rel="noreferrer">
-                      <Icon color="next-primary" as={FaLinkedinIn} w={8} h={8} />
+                      <Icon
+                        color="next-primary"
+                        as={FaLinkedinIn}
+                        w={8}
+                        h={8}
+                      />
                     </a>
                   </Link>
                 </Box>

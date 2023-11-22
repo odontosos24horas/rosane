@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 
 export default function SplitScreen() {
@@ -9,7 +10,11 @@ export default function SplitScreen() {
       direction={{ base: 'column', md: 'row' }}
     >
       <Flex flex={1}>
-        <Image alt={'Login Image'} objectFit={'cover'} src={'/images/home/hero.jpeg'} />
+        <Image
+          alt={'Login Image'}
+          objectFit={'cover'}
+          src={'/images/home/hero.jpeg'}
+        />
       </Flex>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -43,17 +48,22 @@ export default function SplitScreen() {
             Ou seja, ele não é uma solução puramente estética. Essa alternativa também é positiva
             por diversas questões funcionais.
           </Text> */}
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'black'} opacity={'0.6'}>
-            Com um consultório amplo e agradável, localizado em um dos pontos nobres de Belo
-            Horizonte, realizamos atendimentos especializados em Implantodontia, Periodontia,
-            Endodontia e Microscopia endodôntica.
+          <Text
+            fontSize={{ base: 'md', lg: 'lg' }}
+            color={'black'}
+            opacity={'0.6'}
+          >
+            Com um consultório amplo e agradável, localizado em um dos pontos
+            nobres de Belo Horizonte, realizamos atendimentos especializados em
+            Implantodontia, Periodontia, Endodontia e Microscopia endodôntica.
             <br />
             <br />
-            Através de tratamentos personalizados, com a qualidade que você merece. Aqui você se
-            sentirá seguro de que todos os processos de higienização e esterilização de equipamentos
-            são realizados adequadamente, além do cumprimento de todos os cuidados necessários para
-            lhe proporcionar tranquilidade e conforto e a segurança de um tratamento muito bem
-            feito.
+            Através de tratamentos personalizados, com a qualidade que você
+            merece. Aqui você se sentirá seguro de que todos os processos de
+            higienização e esterilização de equipamentos são realizados
+            adequadamente, além do cumprimento de todos os cuidados necessários
+            para lhe proporcionar tranquilidade e conforto e a segurança de um
+            tratamento muito bem feito.
           </Text>
         </Stack>
       </Flex>

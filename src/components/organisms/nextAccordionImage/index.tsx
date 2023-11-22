@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
+
+import Image from 'next/image'
+
 import {
   Box,
   Flex,
@@ -10,7 +13,6 @@ import {
   AccordionPanel,
   AccordionIcon
 } from '@chakra-ui/react'
-import Image from 'next/image'
 
 export interface NextAccordionImageProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
@@ -23,15 +25,15 @@ export interface NextAccordionImageProps {
   textButton?: string
   image: string
   url?: string
-  width?: string
-  height?: string
+  width: string
+  height: string
   directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   content?: 'image' | 'map' | 'form' | 'carousel'
   id?: string
   rightItemJustify?: 'end'
-  features?: Array<Record<string, any>>
-  specialties?: Array<Record<string, any>>
+  features?: Array<Record<string, ReactNode>>
+  specialties?: Array<Record<string, ReactNode>>
 }
 
 const NextAccordionImage = ({
@@ -59,7 +61,11 @@ const NextAccordionImage = ({
   }, [])
   if (!isFront) return null
   return (
-    <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
+    <Stack
+      id={id}
+      bg={background}
+      direction={{ base: directionBase, md: directionMd }}
+    >
       <Flex
         px={{ base: 10 }}
         pt={content === 'form' ? 20 : [12, 0]}
@@ -79,10 +85,17 @@ const NextAccordionImage = ({
             {title}
           </Text>
           <Accordion defaultIndex={[0]}>
-            {specialties?.map(item => (
-              <AccordionItem borderTop="0" borderColor="next-primary">
+            {specialties?.map((item, index) => (
+              <AccordionItem
+                key={index}
+                borderTop="0"
+                borderColor="next-primary"
+              >
                 <h2>
-                  <AccordionButton borderBottom="1px" borderColor="next-primary">
+                  <AccordionButton
+                    borderBottom="1px"
+                    borderColor="next-primary"
+                  >
                     <Box flex="1" textAlign="left">
                       <Text
                         color={'next-primary'}
