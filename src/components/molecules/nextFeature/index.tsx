@@ -1,6 +1,8 @@
-import { Flex, Text, Stack, Box } from '@chakra-ui/react'
 import React, { ReactElement } from 'react'
+
 import Image from 'next/image'
+
+import { Flex, Text, Stack, Box } from '@chakra-ui/react'
 
 export interface NextFeatureProps {
   title?: string
@@ -39,7 +41,9 @@ const NextFeature = ({
               {icon}
             </Flex>
           )}
-          {image && <Image alt={title} src={image} width={width} height={height} />}
+          {image && (
+            <Image alt={title} src={image} width={width} height={height} />
+          )}
           {title && (
             <Text fontWeight={500} color={'next-primary'}>
               {title}

@@ -1,10 +1,12 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
+
+import { Box, Center, Heading } from '@chakra-ui/react'
+
 import NextCallToAction, {
   NextCallToActionProps
 } from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
-import { Box, Center, Heading } from '@chakra-ui/react'
 
 export type NextTemplateAboutUs = {
   nextCallToActionItems: Array<NextCallToActionProps>

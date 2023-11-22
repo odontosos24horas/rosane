@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Flex, SimpleGrid } from '@chakra-ui/react'
+
 import NextTeamCard from '../../molecules/nextTeamCard'
 
 export interface NextTeamProps {
@@ -15,7 +17,12 @@ const NextTeam = ({ items }: NextTeamProps) => {
       direction={'column'}
       width={'full'}
     >
-      <SimpleGrid columns={{ base: 1, xl: 4 }} spacing={'20'} mt={16} mx={'auto'}>
+      <SimpleGrid
+        columns={{ base: 1, xl: 4 }}
+        spacing={'20'}
+        mt={16}
+        mx={'auto'}
+      >
         {items.map((item, index) => (
           <NextTeamCard
             key={index}

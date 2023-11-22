@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Flex, Stack, Text } from '@chakra-ui/react'
-import NextButton from '../../atoms/nextButton'
-import Link from 'next/link'
+
 import Image from 'next/image'
-import NextContactUs from '../nextContactUs'
+import Link from 'next/link'
+
+import { Box, Flex, Stack, Text } from '@chakra-ui/react'
+
+import NextButton from '../../atoms/nextButton'
 import NextCarousel from '../nextCarousel'
+import NextContactUs from '../nextContactUs'
 
 export interface NextCallToActionProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
@@ -85,11 +88,20 @@ const NextCallToAction = ({
               </Text>
               {(content === 'image' || content === 'form') && (
                 <Box display={{ md: 'none' }}>
-                  <Image alt={title} src={image} width={width} height={height} />
+                  <Image
+                    alt={title}
+                    src={image}
+                    width={width}
+                    height={height}
+                  />
                 </Box>
               )}
               {content === 'form' && <NextContactUs />}
-              <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor} whiteSpace={'pre-wrap'}>
+              <Text
+                fontSize={{ base: 'md', lg: 'lg' }}
+                color={textColor}
+                whiteSpace={'pre-wrap'}
+              >
                 {text}
               </Text>
               {textButton && (

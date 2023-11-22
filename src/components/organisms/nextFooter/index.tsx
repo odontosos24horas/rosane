@@ -1,8 +1,18 @@
 import React, { ReactNode } from 'react'
-import Image from 'next/image'
-import packageInfo from '../../../../package.json'
 
-import { Box, Container, Heading, SimpleGrid, Stack, Text, Link } from '@chakra-ui/react'
+import Image from 'next/image'
+
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  Link
+} from '@chakra-ui/react'
+
+import packageInfo from '../../../../package.json'
 import NextimeSvg from '../../atoms/nextimeSvg'
 const version = packageInfo.version
 const NeXTIMEColor = '#202F4F'
@@ -24,7 +34,10 @@ const NextFooter = () => {
     <footer>
       <Box bg={'white'} color={'next-primary'}>
         <Container as={Stack} maxW={'6xl'} py={10}>
-          <SimpleGrid templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }} spacing={8}>
+          <SimpleGrid
+            templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
+            spacing={8}
+          >
             <Stack spacing={6}>
               <Box justifyContent={'center'}>
                 <Image
@@ -41,8 +54,8 @@ const NextFooter = () => {
                 />
               </Box>
               <Text fontSize={'sm'}>
-                © {new Date().getFullYear()} Dr. Danilo Antunes e Dra. Rosane Lage Lacerda. Todos os
-                direitos reservados.
+                © {new Date().getFullYear()} Dr. Danilo Antunes e Dra. Rosane
+                Lage Lacerda. Todos os direitos reservados.
               </Text>
               <Text>
                 Desenvolvido por:
@@ -71,10 +84,18 @@ const NextFooter = () => {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
-              <Link href={'mailto:drdaniloantunes@gmail.com'}>E-mail Dr. Danilo</Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
-              <Link href={'mailto:rosane.lacerda@hotmail.com'}>E-mail Dra. Rosane</Link>
-              <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dra. Rosane</Link>
+              <Link href={'mailto:drdaniloantunes@gmail.com'}>
+                E-mail Dr. Danilo
+              </Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes'}>
+                Instagram Dr. Danilo
+              </Link>
+              <Link href={'mailto:rosane.lacerda@hotmail.com'}>
+                E-mail Dra. Rosane
+              </Link>
+              <Link href={'https://www.instagram.com/dra.rosane.lage'}>
+                Instagram Dra. Rosane
+              </Link>
             </Stack>
             <Stack align={'flex-start'}>
               <Link href={'tel:03133188718'}>
@@ -94,7 +115,8 @@ const NextFooter = () => {
                 Dra. Rosane Lage Lacerda
               </Heading>
               <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
+                30140-190
               </Text>
             </Stack>
           </SimpleGrid>

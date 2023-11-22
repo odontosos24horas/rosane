@@ -1,9 +1,13 @@
 import React from 'react'
-import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
+
+import { Container } from '@chakra-ui/react'
+
+import NextCallToAction, {
+  NextCallToActionProps
+} from '../../organisms/nextCallToAction'
+import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
-import { Container } from '@chakra-ui/react'
-import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 
 export type NextTemplateHomeProps = {
   nextCallToActionItems: Array<NextCallToActionProps>
@@ -15,7 +19,9 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
     <NextLayout>
       <NextHero />
       <Container maxW="5xl" py={8}>
-        <NextGridListWithHeading features={nextCallToActionItems[3].specialties} />
+        <NextGridListWithHeading
+          features={nextCallToActionItems[3].specialties}
+        />
       </Container>
       {/* <Center bgColor={'next-gray-dark'}>
         <Heading

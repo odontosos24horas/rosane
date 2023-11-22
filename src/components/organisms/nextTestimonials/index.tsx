@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { chakra, Flex, SimpleGrid, Text } from '@chakra-ui/react'
 
 const testimonials = [
@@ -91,11 +92,19 @@ function TestmonialCard(props: TestimonialCardProps) {
         backgroundImage: backgrounds[index % 4]
       }}
     >
-      <Flex direction={'column'} textAlign={'left'} justifyContent={'space-between'}>
+      <Flex
+        direction={'column'}
+        textAlign={'left'}
+        justifyContent={'space-between'}
+      >
         <Text>{content}</Text>
         <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={14}>
           {name}
-          <chakra.span fontFamily={'Inter'} fontWeight={'medium'} color={'gray.500'}>
+          <chakra.span
+            fontFamily={'Inter'}
+            fontWeight={'medium'}
+            color={'gray.500'}
+          >
             {' '}
             - {role}
           </chakra.span>
@@ -114,7 +123,12 @@ export default function NextTestimonials() {
       direction={'column'}
       width={'full'}
     >
-      <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={'20'} mt={16} mx={'auto'}>
+      <SimpleGrid
+        columns={{ base: 1, xl: 2 }}
+        spacing={'20'}
+        mt={16}
+        mx={'auto'}
+      >
         {testimonials.map((cardInfo, index) => (
           <TestmonialCard key={index} {...cardInfo} index={index} />
         ))}

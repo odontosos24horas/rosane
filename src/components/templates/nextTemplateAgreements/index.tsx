@@ -1,8 +1,9 @@
-import NextLayout from '../nextLayout'
+import { Box, Container, Text, VStack } from '@chakra-ui/react'
+
+import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextFeatures from '../../organisms/nextFeatures'
 import NextHeroPage from '../../organisms/nextHeropage'
-import { Box, Container, Text, VStack } from '@chakra-ui/react'
-import { NextFeatureProps } from '../../molecules/nextFeature'
+import NextLayout from '../nextLayout'
 
 export type NextTemplateAgreementsProps = {
   agreements: Array<Array<NextFeatureProps>>
@@ -29,7 +30,10 @@ const NextTemplateAgreements = ({
         </Text>
         <VStack spacing={6} align="stretch">
           <Box>
-            <Text color={'next-gray.600'} fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+            <Text
+              color={'next-gray.600'}
+              fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+            >
               Atendemos particular e temos parcerias com o plano:
             </Text>
             {/* <NextFeatures items={agreements[0]} numberGrid={numberGrid} /> */}

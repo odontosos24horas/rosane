@@ -1,5 +1,7 @@
-import { Box, SimpleGrid, Text, HStack, VStack } from '@chakra-ui/react'
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from 'next/image'
+
+import { Box, SimpleGrid, Text, HStack, VStack } from '@chakra-ui/react'
 
 const featuresDefault = [
   {

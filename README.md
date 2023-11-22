@@ -24,7 +24,6 @@ Os nossos projetos são desenvolvidos com:
 - [Video instalando o commitlint, husky e o ](https://www.youtube.com/watch?v=erInHkjxkL8&t=474s)
 - [Clean Code with JS](https://medium.com/trainingcenter/c%C3%B3digo-limpo-vers%C3%A3o-javascript-80adecafdbec)
 
-
 ## Conventional commits
 
 As convenções de commit mais comuns seguem este padrão:
@@ -63,21 +62,23 @@ Outros: Todos iram adicionar ao PATCH:
 
 1. Crie um repositório para armazenar o projeto, utilizando a conta da NeXTIME e as seguintes informações:
 
-* OWNER: `nextimecode`
-* REPOSITORY NAME: `X-Y`
-  * X: Tipo de projeto
-  * Y: Nome do projeto
-  * Exemplos: `web-eimilhas` ou `mobile-projetox`
-* Questionar ao coordenador se o código do projeto deverá ficar em modo **Public** ou **Privado**
-* Marcar a caixa **Add a README file**
+- OWNER: `nextimecode`
+- REPOSITORY NAME: `X-Y`
+  - X: Tipo de projeto
+  - Y: Nome do projeto
+  - Exemplos: `web-eimilhas` ou `mobile-projetox`
+- Questionar ao coordenador se o código do projeto deverá ficar em modo **Public** ou **Privado**
+- Marcar a caixa **Add a README file**
 
 2. Dê acesso a todos os envolvidos no projeto ao repositório do Github.
 
 3. Crie um diretório para o projeto em sua máquina local, seguindo os passos a seguir:
+
    1. Abra o Git Bash no diretório onde o projeto será armazenado na sua máquina.
    2. Clone o [**projeto default**](https://github.com/nextimecode/nextime-nextjs-start) no diretório local do projeto com `git clone URL_DO_REPOSITÓRIO_DEFAULT`.
 
 4. Suba o código inicial do projeto com o uso do Git Bash, seguindo os passos a seguir:
+
    1. Inicie o projeto com o comando `git init -b main`.
    2. Fazer stage dos arquivos para commit com `git add -A`.
    3. Fazer commit dos arquivos com `git commit -m "Primeiro Commit"`.
@@ -102,7 +103,6 @@ Esses comandos servem para verificar erros no código:
 
 Como o NextJS faz um build do site no momento de produção adicionamos também para quando o dev fizer o push do projeto ele roda o yarn build e você consegue verificar se tem algum erro no build. Isso é visto no package.json prepush.
 
-
 Depois que voce fizer o clone do projeto que vocé irá trabalhar você deve instalar o projeto com:
 
 ```bash
@@ -110,7 +110,6 @@ yarn
 ```
 
 E para rodar ele em ambiente de desenvolvimento utilize:
-
 
 ```bash
 yarn dev
@@ -154,9 +153,11 @@ $git checkout -b feature/nome_da_feature
 ```
 
 3. Quando finalizar a tarefa que estava trabalhando você deve verificar se há mudanças na main, para isso use o comando a baixo e se houver conflitos, devem ser reparados.
+
 ```
 $git merge main
 ```
+
 4. Agora a feature esta pronta para subir, então é necessário abrir uma release respeitando o controle de versionamento.
 
 MAJOR: quando você realizar alterações incompatíveis da API;
@@ -192,7 +193,7 @@ Nesse momento o projeto irá verificar se tem algum erro do eslint ou stylelint,
 $git push --set-upstream origin release/x.y.z
 ```
 
-8. Agora precisamos solicitar que nosso código seja adicionado a main, vá até o repositório do projeto  no site do github e clicar em: compare && pull request nome_da_release
+8. Agora precisamos solicitar que nosso código seja adicionado a main, vá até o repositório do projeto no site do github e clicar em: compare && pull request nome_da_release
 
 9. Na página do Pull Request você deve:
 

@@ -1,10 +1,13 @@
-import Head from 'next/head'
 import React, { PropsWithChildren } from 'react'
-import NextHeader from '../../organisms/nextHeader'
-import NextFooter from '../../organisms/nextFooter'
-import { Box } from '@chakra-ui/react'
+
+import Head from 'next/head'
 import Link from 'next/link'
+
+import { Box } from '@chakra-ui/react'
+
 import NextWhatsIcon from '../../atoms/nextWhatsIcon'
+import NextFooter from '../../organisms/nextFooter'
+import NextHeader from '../../organisms/nextHeader'
 
 type Props = {
   title?: string
@@ -27,7 +30,14 @@ const NextLayout = ({
       <NextHeader />
       <main>{children}</main>
       <NextFooter />
-      <Box position="fixed" width="60px" height="60px" zIndex={100} bottom="20px" right="20px">
+      <Box
+        position="fixed"
+        width="60px"
+        height="60px"
+        zIndex={100}
+        bottom="20px"
+        right="20px"
+      >
         <Link href={nextSocialNetwork}>
           <a target="_blank" rel="noreferrer">
             <NextWhatsIcon />

@@ -1,7 +1,8 @@
-import NextLayout from '../nextLayout'
+import { Container, Text } from '@chakra-ui/react'
+
 import NextFeatures from '../../organisms/nextFeatures'
 import NextHeroPage from '../../organisms/nextHeropage'
-import { Container, Text } from '@chakra-ui/react'
+import NextLayout from '../nextLayout'
 
 export type NextTemplateAgreementsProps = {
   nextTechnologyItems: Array<Record<string, unknown>>

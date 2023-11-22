@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import React from 'react'
+
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   render(): JSX.Element {
@@ -14,7 +16,10 @@ export default class MyDocument extends Document {
             content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH, tratamento de canal com microscópio, tratamento de canal complexo, dor de dente, canal de dente, dentista de canal"
           />
           <link rel="icon" href="/favicon.png" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TPK3DCT" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=GTM-TPK3DCT"
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `
