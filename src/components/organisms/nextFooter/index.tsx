@@ -66,7 +66,6 @@ const NextFooter = () => {
               <ListHeader>Menu</ListHeader>
               <Link href={'/'}>A Clínica</Link>
               <Link href={'/fotos'}>Fotos</Link>
-              <Link href={'/convenios'}>Convênios</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
             </Stack>
