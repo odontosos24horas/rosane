@@ -12,7 +12,7 @@
     "lint": "eslint src --ext .ts,.tsx",
     "precommit": "next lint",
     "commit": "cz",
-    "prepush": "git diff HEAD --quiet && git fetch && git pull origin main && pnpm precommit && pnpm && pnpm build",
+    "prepush": "git diff HEAD --quiet && git fetch && git pull origin main && pnpm precommit && pnpm i && pnpm build",
     "prepare": "husky install",
     "postinstall": "husky install"
   },
