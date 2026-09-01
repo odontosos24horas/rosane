@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -50,15 +50,6 @@ const NextCallToAction = ({
   id,
   rightItemJustify
 }: NextCallToActionProps) => {
-  const [isFront, setIsFront] = useState(false)
-  useEffect(() => {
-    process.nextTick(() => {
-      if (globalThis.window ?? false) {
-        setIsFront(true)
-      }
-    })
-  }, [])
-  if (!isFront) return null
   return (
     <>
       <Stack
@@ -80,7 +71,8 @@ const NextCallToAction = ({
               <Text
                 color={titleColor}
                 bgGradient={titleColor ? undefined : bgGradient}
-                bgClip={!titleColor ? 'text' : undefined}
+                bgClip={titleColor ? undefined : 'text'}
+                as="h2"
                 fontWeight={700}
                 fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
               >

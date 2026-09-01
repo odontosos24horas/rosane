@@ -14,7 +14,6 @@ export type NextTemplateHomeProps = {
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
-  console.log(nextCallToActionItems[3])
   return (
     <NextLayout>
       <NextHero />

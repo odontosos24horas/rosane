@@ -87,7 +87,7 @@ const NextFooter = () => {
               <Link href={'mailto:drdaniloantunes@gmail.com'}>
                 E-mail Dr. Danilo
               </Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>
+              <Link href={'https://www.instagram.com/dr.daniloantunes_'}>
                 Instagram Dr. Danilo
               </Link>
               <Link href={'mailto:rosane.lacerda@hotmail.com'}>
@@ -98,7 +98,7 @@ const NextFooter = () => {
               </Link>
             </Stack>
             <Stack align={'flex-start'}>
-              <Link href={'tel:03133188718'}>
+              <Link href={'tel:+553133188718'}>
                 <Heading color="next-primary" size="lg">
                   (31) 3318-8718
                 </Heading>
@@ -106,7 +106,7 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dr. Danilo Antunes
               </Heading>
-              <Link href={'tel:025552779'}>
+              <Link href={'tel:+553125552779'}>
                 <Heading color="next-primary" size="lg">
                   (31) 2555-2779
                 </Heading>

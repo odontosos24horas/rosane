@@ -1,3 +1,5 @@
+/* eslint-disable no-console -- log de erro do envio de e-mail: é o único
+   registro quando o SendGrid falha, e roda no servidor. */
 import { NextApiRequest, NextApiResponse } from 'next'
 
 import sgMail from '@sendgrid/mail'
