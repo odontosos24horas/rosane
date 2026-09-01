@@ -18,13 +18,19 @@ export const TELEFONE_DANILO_E164 = '+553133188718'
 export const TELEFONE_DANILO = '(31) 3318-8718'
 
 /**
- * ⚠️ PENDENTE PEDRO: este número tem 8 dígitos depois do DDD
- * (55 + 31 + 96890301), formato anterior a 2016. Celulares brasileiros têm
- * 9 dígitos desde então, então o link provavelmente não abre conversa
- * nenhuma. Não corrigi por conta própria: chutar um dígito em número de
- * WhatsApp é perder paciente em silêncio.
+ * WhatsApp — CORRIGIDO PELA REGRA, NAO CONFIRMADO NA FONTE.
+ *
+ * O site trazia 5531996890301: 8 digitos apos o DDD, formato anterior a
+ * 2014, quando a Anatel acrescentou o nono digito aos celulares do DDD 31.
+ * O link nao abria conversa.
+ *
+ * Aplicada a mesma transformacao que foi confirmada no site do Dr. Danilo
+ * (la o numero resultante confere com o Doctoralia). Aqui nao ha fonte
+ * publica com o celular da Dra. Rosane: o Doctoralia so lista o fixo.
+ *
+ * PENDENTE PEDRO: confirmar (31) 99689-0301 com ela.
  */
-export const WHATSAPP_NUMERO = '553196890301'
+export const WHATSAPP_NUMERO = '5531996890301'
 export const WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMERO}&text=${encodeURIComponent(
   'Olá, Dra. Rosane.'
 )}`
@@ -35,7 +41,7 @@ export const ENDERECO = {
   bairro: 'Funcionários',
   cidade: 'Belo Horizonte',
   estado: 'MG',
-  cep: '30140-190',
+  cep: '30140-090',
   pais: 'BR'
 } as const
 

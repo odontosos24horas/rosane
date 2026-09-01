@@ -248,7 +248,7 @@ const NextHeader = () => {
             {/* <NextLink href={'/'}>
               <a>
                 <Image
-                  src="/images/logos/logo_header.svg"
+                  src="/images/logos/logo_header.png"
                   alt="Logo Danilo Antunes"
                   width={250}
                   height={42}
@@ -259,7 +259,7 @@ const NextHeader = () => {
             <NextLink href={'/'}>
               <a>
                 <Image
-                  src="/images/logos/logo_rosane.svg"
+                  src="/images/logos/logo_rosane.png"
                   alt="Logo Dra Rosane Lage Lacerda"
                   width={289}
                   height={75}

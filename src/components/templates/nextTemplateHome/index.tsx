@@ -76,7 +76,6 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         url={nextCallToActionItems[0].url}
         content={nextCallToActionItems[0].content}
       />
-      {/* <NextWithBackgroundImage /> */}
     </NextLayout>
   )
 }

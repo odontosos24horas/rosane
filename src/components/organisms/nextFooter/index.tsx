@@ -41,13 +41,13 @@ const NextFooter = () => {
             <Stack spacing={6}>
               <Box justifyContent={'center'}>
                 <Image
-                  src="/images/logos/logo_header.svg"
+                  src="/images/logos/logo_header.png"
                   alt="Logo Dr Danilo Antunes"
                   width={153}
                   height={29}
                 />
                 <Image
-                  src="/images/logos/logo_rosane.svg"
+                  src="/images/logos/logo_rosane.png"
                   alt="Logo Dra Rosane Lage Lacerda"
                   width={153}
                   height={29}
@@ -116,7 +116,7 @@ const NextFooter = () => {
               </Heading>
               <Text color="next-primary" fontSize="sm">
                 Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
-                30140-190
+                30140-090
               </Text>
             </Stack>
           </SimpleGrid>

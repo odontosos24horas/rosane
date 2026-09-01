@@ -65,7 +65,7 @@ const NextHome = () => {
         </Box>
         <Text color="next-primary" fontSize="sm">
           Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
-          30140-190
+          30140-090
         </Text>
       </Container>
     </NextLayout>
