@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 
 import packageInfo from '../../../../package.json'
+import NextAnoAtual from '../../atoms/nextAnoAtual'
 import NextimeSvg from '../../atoms/nextimeSvg'
 const version = packageInfo.version
 const NeXTIMEColor = '#202F4F'
@@ -54,8 +55,8 @@ const NextFooter = () => {
                 />
               </Box>
               <Text fontSize={'sm'}>
-                © {new Date().getFullYear()} Dr. Danilo Antunes e Dra. Rosane
-                Lage Lacerda. Todos os direitos reservados.
+                © <NextAnoAtual /> Dr. Danilo Antunes e Dra. Rosane Lage
+                Lacerda. Todos os direitos reservados.
               </Text>
               <Text>
                 Desenvolvido por:
