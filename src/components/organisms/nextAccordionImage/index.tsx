@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { ReactNode } from 'react'
 
 import Image from 'next/image'
 
@@ -51,15 +51,6 @@ const NextAccordionImage = ({
   id,
   specialties
 }: NextAccordionImageProps) => {
-  const [isFront, setIsFront] = useState(false)
-  useEffect(() => {
-    process.nextTick(() => {
-      if (globalThis.window ?? false) {
-        setIsFront(true)
-      }
-    })
-  }, [])
-  if (!isFront) return null
   return (
     <Stack
       id={id}
@@ -76,9 +67,10 @@ const NextAccordionImage = ({
       >
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Text
+            as="h1"
             color={titleColor}
             bgGradient={titleColor ? undefined : bgGradient}
-            bgClip={!titleColor ? 'text' : undefined}
+            bgClip={titleColor ? undefined : 'text'}
             fontWeight={700}
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
           >

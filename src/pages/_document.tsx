@@ -1,45 +1,39 @@
-/* eslint-disable @next/next/next-script-for-ga */
+/* eslint-disable @next/next/next-script-for-ga -- o snippet do GTM fica
+   no <head> de proposito. A regra sugere next/script, que carrega com
+   `afterInteractive`: isso atrasa o container e pode perder eventos do
+   inicio da visita. A documentacao do Google pede o snippet o mais alto
+   possivel no <head>, e ele ja injeta o script de forma assincrona. */
 import React from 'react'
 
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+
+import { GTM_ID } from '../data/site'
+
 export default class MyDocument extends Document {
-  render(): JSX.Element {
+  render(): React.JSX.Element {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
-          <meta
-            name="description"
-            content="Dr. Rosane Lage. Tratamento odontológico especializado em endodontia com microscopia operatória no bairro Funcionários, Belo Horizonte."
-          />
-          <meta
-            name="keywords"
-            content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH, tratamento de canal com microscópio, tratamento de canal complexo, dor de dente, canal de dente, dentista de canal"
-          />
           <link rel="icon" href="/favicon.png" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=GTM-TPK3DCT"
-          />
+          {/* GTM carregado com o snippet correto (gtm.js).
+              O código anterior usava gtag.js com um ID GTM-, combinação que
+              não carrega o container: o gtag.js só aceita G-, AW- ou UA-.
+              Na prática, nenhuma tag disparava para quem tem JavaScript. */}
           <script
             dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GTM-TPK3DCT');
-            `
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`
             }}
           />
         </Head>
         <body>
           <noscript>
             <iframe
-              title="Código do GTM"
-              src="https://www.googletagmanager.com/ns.html?id=GTM-TPK3DCT"
+              title="Google Tag Manager"
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
               height="0"
               width="0"
               style={{ display: 'none', visibility: 'hidden' }}
-            ></iframe>
+            />
           </noscript>
           <Main />
           <NextScript />

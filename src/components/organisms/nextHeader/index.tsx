@@ -220,7 +220,7 @@ const MobileNav = () => {
       {NAV_ITEMS.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
-      <NextLink href={'tel:3135860900'}>
+      <NextLink href={'tel:+553135860900'}>
         <a>
           <Heading mt={8} color="white" size="lg">
             (31) 3586-0900
@@ -248,7 +248,7 @@ const NextHeader = () => {
             {/* <NextLink href={'/'}>
               <a>
                 <Image
-                  src="/images/logos/logo_header.svg"
+                  src="/images/logos/logo_header.png"
                   alt="Logo Danilo Antunes"
                   width={250}
                   height={42}
@@ -259,7 +259,7 @@ const NextHeader = () => {
             <NextLink href={'/'}>
               <a>
                 <Image
-                  src="/images/logos/logo_rosane.svg"
+                  src="/images/logos/logo_rosane.png"
                   alt="Logo Dra Rosane Lage Lacerda"
                   width={289}
                   height={75}

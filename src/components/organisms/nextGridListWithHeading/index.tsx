@@ -42,7 +42,7 @@ export default function NextGridListWithHeading({
         pb={6}
         color={titleColor}
         bgGradient={titleColor ? undefined : bgGradient}
-        bgClip={!titleColor ? 'text' : undefined}
+        bgClip={titleColor ? undefined : 'text'}
         fontWeight={700}
         fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
       >
@@ -64,7 +64,7 @@ export default function NextGridListWithHeading({
               <Text
                 color={titleColor}
                 bgGradient={titleColor ? undefined : bgGradient}
-                bgClip={!titleColor ? 'text' : undefined}
+                bgClip={titleColor ? undefined : 'text'}
                 fontWeight={500}
                 fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
               >

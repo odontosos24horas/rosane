@@ -18,7 +18,7 @@ const NextHome = () => {
       <Center>
         <Heading
           fontWeight={900}
-          as={'span'}
+          as={'h1'}
           bgGradient="linear(to-b, #EACE8C, #D6BD82)"
           bgClip="text"
           fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
@@ -32,13 +32,13 @@ const NextHome = () => {
             <Heading color="next-primary" size="md">
               Dr. Danilo Antunes
             </Heading>
-            <Link href={'tel:3133188718'}>
+            <Link href={'tel:+553133188718'}>
               <Heading color="next-primary" size="md">
                 (31) 3318-8718
               </Heading>
             </Link>
             <Link
-              href={'https://www.instagram.com/dr.daniloantunes'}
+              href={'https://www.instagram.com/dr.daniloantunes_'}
               color="next-primary"
             >
               Instagram Dr. Danilo
@@ -50,7 +50,7 @@ const NextHome = () => {
             <Heading color="next-primary" size="md">
               Dra. Rosane Lage Lacerda
             </Heading>
-            <Link href={'tel:25552779'}>
+            <Link href={'tel:+553125552779'}>
               <Heading color="next-primary" size="md">
                 (31) 2555-2779
               </Heading>
@@ -65,7 +65,7 @@ const NextHome = () => {
         </Box>
         <Text color="next-primary" fontSize="sm">
           Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
-          30140-190
+          30140-090
         </Text>
       </Container>
     </NextLayout>
