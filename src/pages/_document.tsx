@@ -1,3 +1,8 @@
+/* eslint-disable @next/next/next-script-for-ga -- o snippet do GTM fica
+   no <head> de proposito. A regra sugere next/script, que carrega com
+   `afterInteractive`: isso atrasa o container e pode perder eventos do
+   inicio da visita. A documentacao do Google pede o snippet o mais alto
+   possivel no <head>, e ele ja injeta o script de forma assincrona. */
 import React from 'react'
 
 import Document, { Head, Html, Main, NextScript } from 'next/document'
