@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 
+import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextAccordionImage, {
   NextAccordionImageProps
 } from '../../organisms/nextAccordionImage'
@@ -19,6 +20,12 @@ const NextTemplateSpecialties = ({
 }: NextTemplateAboutUs) => {
   return (
     <NextLayout>
+      {nextCallToActionItems.title === 'Dra. Rosane' && (
+        <NextDoctoralia slug="rosane-lage" nome="Rosane Lage" />
+      )}
+      {nextCallToActionItems.title === 'Dr. Danilo' && (
+        <NextDoctoralia slug="danilo-antunes" nome="Danilo Antunes" />
+      )}
       <NextAccordionImage
         id={'specialties'}
         title={nextCallToActionItems.title}

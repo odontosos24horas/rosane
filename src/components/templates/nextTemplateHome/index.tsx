@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Container } from '@chakra-ui/react'
 
+import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextCallToAction, {
   NextCallToActionProps
 } from '../../organisms/nextCallToAction'
@@ -47,6 +48,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         content={nextCallToActionItems[3].content}
         background={nextCallToActionItems[3].background}
       />
+      <NextDoctoralia slug="rosane-lage" nome="Rosane Lage" />
       <NextCallToAction
         id={'danilo'}
         title={nextCallToActionItems[2].title}
