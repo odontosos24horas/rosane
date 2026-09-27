@@ -1,34 +1,33 @@
+/**
+ * Tratamentos endodônticos realizados pela Dra. Rosane Lage.
+ *
+ * PENDENTE CLIENTE: confirmar se a Dra. Rosane realiza tratamento de
+ * perfurações, remoção de instrumentos fraturados e cirurgia
+ * parendodôntica antes de incluir esses itens.
+ */
 export const treatmentsItems = [
   {
-    title: 'IMPLANTES CARGA IMEDIATA',
-    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
+    title: 'TRATAMENTO DE CANAL',
+    text: 'O tratamento de canal (endodontia) remove a polpa dentária inflamada ou infectada, limpa e desinfeta os canais internos da raiz e, por fim, os preenche e sela.\n\nÉ indicado quando há cárie profunda, trauma, dor espontânea ou persistente ao frio e ao calor, abscesso ou escurecimento do dente. O objetivo é eliminar a infecção e manter o dente natural na boca.'
   },
   {
-    title: 'IMPLANTE OVERDENTURE',
-    text: 'É uma prótese total que possui fixação através de clips instalados na parte interna da prótese que se fixam em uma barra entre 2 a 4 implantes dentários.\nEntre seus benefícios, por serem móveis, o paciente pode retirar para higienização, mas ao mesmo tempo dá segurança não ficando solta na boca, sendo assim, não causando constrangimentos na hora de comer, sorrir, espirrar ou bocejar.'
+    title: 'RETRATAMENTO DE CANAL',
+    text: 'Quando um dente que já passou por tratamento de canal volta a apresentar dor, inchaço ou lesão visível na radiografia, pode ser necessário refazer o tratamento.\n\nNo retratamento, o material antigo é removido, os canais são novamente limpos e desinfetados e o dente é selado outra vez. A indicação depende da avaliação clínica e dos exames de imagem de cada caso.'
   },
   {
-    title: 'PROTOCOLO SOBRE IMPLANTE',
-    text: 'O protocolo sobre implante dentário é uma das técnicas mais modernas e utilizadas pela odontologia.\n\nAlém de ser indicado para pacientes que utilizam prótese total, isso é dentaduras superiores e inferiores, esse recurso também pode ser uma opção para aqueles pacientes que apresentam dentes comprometidos, ou seja, com pouca inserção de tecido ósseo.'
+    title: 'TRATAMENTO DE CANAL COM MICROSCÓPIO',
+    text: 'O microscópio operatório amplia e ilumina o interior do dente, permitindo enxergar detalhes que não são visíveis a olho nu, como canais extras, trincas e variações da anatomia.\n\nNa endodontia microscópica, essa visão ampliada auxilia a limpeza, a modelagem e o selamento dos canais com mais precisão, especialmente em casos complexos.'
   },
   {
-    title: 'ENXERTO ÓSSEO',
-    text: 'Os enxertos ósseos servem para melhorar a saúde bucal e estética do paciente, além de tornar viável vários procedimentos, como os implantes dentários.\n\nQuando se perde um dente, é normal também haver a perda óssea. Para um implante é preciso ter altura e largura o suficiente na base óssea, e isso se consegue por meio da cirurgia de enxerto ósseo, assim o espaço estará devidamente preparado para receber o implante.'
+    title: 'DIAGNÓSTICO DE DOR DE ORIGEM ENDODÔNTICA',
+    text: 'Nem toda dor de dente tem a mesma causa. A avaliação endodôntica combina exame clínico, testes de sensibilidade e exames de imagem para identificar se a dor vem da polpa, da raiz ou de outra estrutura.\n\nUm diagnóstico correto evita tratamentos desnecessários e define o melhor caminho para cada paciente.'
   },
   {
-    title: 'IMPLANTE SEM CORTE',
-    text: '(Cirurgia Guiada) O implante sem corte é uma excelente opção para pacientes que precisam de uma reabilitação oral, mas não estão aptos a passar pelo tratamento de implante tradicional. O procedimento é uma técnica moderna e menos invasiva, ideal para aqueles que tem receio de fazer uma cirurgia.\n\n É uma técnica onde se consegue maior precisão na instalação dos implantes, como exemplo disto nas áreas em que temos pouco espaço entre dentes para realizar o procedimento.'
+    title: 'CANAIS CALCIFICADOS E CANAIS COMPLEXOS',
+    text: 'Com o passar do tempo ou após traumas, os canais podem ficar estreitos ou calcificados, e alguns dentes têm canais curvos ou em número maior que o habitual.\n\nO uso do microscópio operatório e de instrumentos específicos ajuda a localizar e tratar esses canais, que são uma das principais causas de insucesso quando passam despercebidos.'
   },
   {
-    title: 'IMPLANTE DENTÁRIO',
-    text: 'O implante dentário é uma técnica onde é possível repor um ou mais dentes perdidos, recuperar a qualidade da mastigação e segurança para sorrir, comer e falar sem medo!'
-  },
-  {
-    title: 'LEVANTAMENTO DE SEIO MAXILAR',
-    text: 'O levantamento de seio maxilar é uma técnica cirúrgica de reconstrução óssea na região do seio maxilar. O cirurgião obtém osso de outra região (pode ser da própria boca, pelve e calota craniana); ou também pode ser osso xenógeno ( osso bovino liofilizado),e o enxerta dentro do seio maxilar objetivando a instalação de implante no futuro quando esse enxerto estiver cicatrizado (normalmente 6 a 8 meses).\n\nA indicação mais comum dessa técnica é quando o paciente deseja instalar implantes dentários nessa região e não tem osso suficiente para isso. Essa é uma das opções de tratamento. A indicação desse tipo de tratamento irá depender de cada caso e do desejo de reabilitação do paciente, por isso, sempre é necessário fazer uma avaliação..'
-  },
-  {
-    title: 'PLÁSTICA GENGIVAL',
-    text: 'Plástica gengival é uma cirurgia reconstrutora da gengiva, capaz de corrigir problemas como o recobrimento de raízes expostas e o aumento de espessura no caso de gengivas finas – onde pode ocorrer o escurecimento.\n\nGeralmente, quando uma pessoa busca a plástica gengival, o objetivo é melhorar a estética do sorriso. \n\nDurante o procedimento, é feito um leve descolamento da gengiva, preservando as papilas, que são aqueles “triângulos” que ficam entre os dentes. Após isso, a gengiva é deslocada para cima, para baixo ou para o lado, a direção dependerá do objetivo da cirurgia.'
+    title: 'PRESERVAÇÃO DE DENTES NATURAIS',
+    text: 'Sempre que possível, a endodontia busca manter o dente natural, que continua sendo a melhor referência de função e estética.\n\nCada caso é avaliado individualmente para indicar se o dente pode ser tratado e preservado com segurança ou se outra alternativa é mais adequada.'
   }
 ]

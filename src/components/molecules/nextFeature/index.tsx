@@ -59,6 +59,7 @@ const NextFeature = ({
       {as && (
         <Box
           as={as}
+          title={title}
           src={image}
           width="100%"
           sx={{

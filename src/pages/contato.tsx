@@ -12,9 +12,11 @@ import {
 
 import NextLayout from '../components/templates/nextLayout'
 
+import { SEO } from '../data/seo'
+
 const NextHome = () => {
   return (
-    <NextLayout>
+    <NextLayout {...SEO.contato}>
       <Center>
         <Heading
           fontWeight={900}

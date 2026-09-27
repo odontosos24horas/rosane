@@ -43,13 +43,13 @@ const NextFooter = () => {
               <Box justifyContent={'center'}>
                 <Image
                   src="/images/logos/logo_header.png"
-                  alt="Logo Dr Danilo Antunes"
+                  alt="Logo do Dr. Danilo Antunes"
                   width={153}
                   height={29}
                 />
                 <Image
                   src="/images/logos/logo_rosane.png"
-                  alt="Logo Dra Rosane Lage Lacerda"
+                  alt="Logo da Dra. Rosane Lage"
                   width={153}
                   height={29}
                 />
@@ -69,9 +69,7 @@ const NextFooter = () => {
                   transition="0.3s"
                   fill="next-primary"
                 >
-                  <a>
-                    <NextimeSvg />
-                  </a>
+                  <NextimeSvg />
                 </Link>
               </Text>
               <Text>v{version}</Text>
@@ -82,6 +80,10 @@ const NextFooter = () => {
               <Link href={'/fotos'}>Fotos</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
+              <Link href={'/contato'}>Contato</Link>
+              <Link href={'/politica-de-privacidade'}>
+                Política de Privacidade
+              </Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
@@ -107,6 +109,9 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dr. Danilo Antunes
               </Heading>
+              <Text fontSize="sm">
+                CRO-MG 27292 · Implantodontia e Periodontia
+              </Text>
               <Link href={'tel:+553125552779'}>
                 <Heading color="next-primary" size="lg">
                   (31) 2555-2779
@@ -115,6 +120,7 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dra. Rosane Lage Lacerda
               </Heading>
+              <Text fontSize="sm">CRO-MG 29.518 · Endodontia</Text>
               <Text color="next-primary" fontSize="sm">
                 Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
                 30140-090

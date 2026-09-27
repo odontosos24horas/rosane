@@ -24,6 +24,7 @@ export interface NextAccordionImageProps {
   textColor?: string
   textButton?: string
   image: string
+  imageAlt?: string
   url?: string
   width: string
   height: string
@@ -43,6 +44,7 @@ const NextAccordionImage = ({
   textColor = 'next-quaternary',
   bgGradient = 'linear(to-b, next-secondary, next-primary)',
   image,
+  imageAlt,
   width,
   height,
   directionMd = 'row',
@@ -115,7 +117,12 @@ const NextAccordionImage = ({
         </Stack>
       </Flex>
       <Flex flex={1}>
-        <Image alt={title} src={image} width={width} height={height} />
+        <Image
+          alt={imageAlt || title}
+          src={image}
+          width={width}
+          height={height}
+        />
       </Flex>
     </Stack>
   )

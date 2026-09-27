@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.dararosanelage.com.br/sitemap.xml
+Sitemap: https://www.rosanelagelacerda.com.br/sitemap.xml

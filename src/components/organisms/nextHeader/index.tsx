@@ -220,7 +220,7 @@ const MobileNav = () => {
       {NAV_ITEMS.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
-      <NextLink href={'tel:+553135860900'}>
+      <NextLink legacyBehavior href={'tel:+553135860900'}>
         <a>
           <Heading mt={8} color="white" size="lg">
             (31) 3586-0900
@@ -249,18 +249,18 @@ const NextHeader = () => {
               <a>
                 <Image
                   src="/images/logos/logo_header.png"
-                  alt="Logo Danilo Antunes"
+                  alt="Logo do Dr. Danilo Antunes"
                   width={250}
                   height={42}
                   layout="fixed"
                 />
               </a>
             </NextLink> */}
-            <NextLink href={'/'}>
+            <NextLink legacyBehavior href={'/'}>
               <a>
                 <Image
                   src="/images/logos/logo_rosane.png"
-                  alt="Logo Dra Rosane Lage Lacerda"
+                  alt="Logo da Dra. Rosane Lage"
                   width={289}
                   height={75}
                 />

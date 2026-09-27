@@ -19,6 +19,7 @@ export interface NextCallToActionProps {
   textColor?: string
   textButton?: string
   image: string
+  imageAlt?: string
   url: string
   width: string
   height: string
@@ -39,6 +40,7 @@ const NextCallToAction = ({
   text,
   textColor = 'next-quaternary',
   image,
+  imageAlt,
   url,
   width,
   height,
@@ -81,7 +83,7 @@ const NextCallToAction = ({
               {(content === 'image' || content === 'form') && (
                 <Box display={{ md: 'none' }}>
                   <Image
-                    alt={title}
+                    alt={imageAlt || title}
                     src={image}
                     width={width}
                     height={height}
@@ -98,7 +100,7 @@ const NextCallToAction = ({
               </Text>
               {textButton && (
                 <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-                  <Link href={url}>
+                  <Link legacyBehavior href={url}>
                     <a>
                       <NextButton bg={bgButton}>{textButton}</NextButton>
                     </a>
@@ -111,7 +113,12 @@ const NextCallToAction = ({
         <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
           {(content === 'image' || content === 'form') && (
             <Box display={{ base: 'none', md: 'flex' }}>
-              <Image alt={title} src={image} width={width} height={height} />
+              <Image
+                alt={imageAlt || title}
+                src={image}
+                width={width}
+                height={height}
+              />
             </Box>
           )}
         </Flex>

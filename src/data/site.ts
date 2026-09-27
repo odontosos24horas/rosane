@@ -51,6 +51,13 @@ export const INSTAGRAM_DANILO = 'https://www.instagram.com/dr.daniloantunes_'
 /** Container do Google Tag Manager. */
 export const GTM_ID = 'GTM-TPK3DCT'
 
+/** Registro profissional, exibido na apresentação, no rodapé e no Schema. */
+export const APRESENTACAO =
+  'Dra. Rosane Lage — Cirurgiã-dentista — CRO-MG 29.518 — Especialista em Endodontia'
+
+/** Imagem de compartilhamento (og:image), 1200x630, em public/. */
+export const OG_IMAGE = '/og-image.jpg'
+
 /** Dados estruturados do consultório. */
 export const jsonLdNegocio = {
   '@context': 'https://schema.org',
@@ -71,12 +78,27 @@ export const jsonLdNegocio = {
   },
   areaServed: { '@type': 'City', name: ENDERECO.cidade },
   medicalSpecialty: ['Dentistry'],
+  image: `${SITE_URL}${OG_IMAGE}`,
   availableService: [
-    { '@type': 'MedicalProcedure', name: 'Endodontia' },
+    { '@type': 'MedicalProcedure', name: 'Tratamento de canal' },
+    { '@type': 'MedicalProcedure', name: 'Retratamento de canal' },
     {
       '@type': 'MedicalProcedure',
       name: 'Tratamento de canal com microscopia operatória'
     }
   ],
+  employee: {
+    '@type': 'Person',
+    name: 'Dra. Rosane Lage',
+    jobTitle: 'Cirurgiã-dentista especialista em Endodontia',
+    image: `${SITE_URL}/images/rosane.jpeg`,
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'CRO-MG',
+      value: '29.518'
+    },
+    knowsAbout: ['Endodontia', 'Microscopia operatória'],
+    sameAs: [INSTAGRAM_ROSANE]
+  },
   sameAs: [INSTAGRAM_ROSANE]
 }
