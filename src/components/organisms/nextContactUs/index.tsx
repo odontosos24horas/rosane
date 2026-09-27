@@ -14,6 +14,7 @@ const NextContactUs = () => {
         envie seu currículo para o e-mail:
       </Text>
       <Link
+        legacyBehavior
         href={
           'mailto:odontosos@odontosos.com.br?subject=Currículo&body=Olá,%20Odonto,%0Dsegue%20meu%20currículo em%20anexo.'
         }

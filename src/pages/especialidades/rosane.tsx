@@ -3,10 +3,14 @@ import React from 'react'
 import NextTemplateSpecialties from '../../components/templates/nextTemplateSpecialties'
 
 import { nextCallToActionItems } from '../../data/home'
+import { SEO } from '../../data/seo'
 
 const NextHome = () => {
   return (
-    <NextTemplateSpecialties nextCallToActionItems={nextCallToActionItems[3]} />
+    <NextTemplateSpecialties
+      seo={SEO.especialidadesRosane}
+      nextCallToActionItems={nextCallToActionItems[3]}
+    />
   )
 }
 

@@ -1,11 +1,13 @@
 import { Box, Container, Text, VStack } from '@chakra-ui/react'
 
+import { SeoMeta } from '../../../data/seo'
 import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextFeatures from '../../organisms/nextFeatures'
 import NextHeroPage from '../../organisms/nextHeropage'
 import NextLayout from '../nextLayout'
 
 export type NextTemplateAgreementsProps = {
+  seo?: SeoMeta
   agreements: Array<Array<NextFeatureProps>>
   title?: string
   numberGrid?: Array<number>
@@ -13,10 +15,11 @@ export type NextTemplateAgreementsProps = {
 const NextTemplateAgreements = ({
   agreements,
   title = 'Convênios',
-  numberGrid = [1, 5]
+  numberGrid = [1, 5],
+  seo
 }: NextTemplateAgreementsProps) => {
   return (
-    <NextLayout>
+    <NextLayout {...seo}>
       <NextHeroPage />
       <Container maxW="container.lg" py={12}>
         <Text

@@ -3,20 +3,23 @@ import React from 'react'
 
 import { Box, Center, Heading } from '@chakra-ui/react'
 
+import { SeoMeta } from '../../../data/seo'
 import NextCallToAction, {
   NextCallToActionProps
 } from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
 
 export type NextTemplateAboutUsProps = {
+  seo?: SeoMeta
   nextCallToActionItems: Array<NextCallToActionProps>
 }
 
 const NextTemplateAboutUs = ({
-  nextCallToActionItems
+  nextCallToActionItems,
+  seo
 }: NextTemplateAboutUsProps) => {
   return (
-    <NextLayout>
+    <NextLayout {...seo}>
       <Center>
         <Heading
           fontWeight={900}
@@ -25,7 +28,7 @@ const NextTemplateAboutUs = ({
           bgClip="text"
           fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
         >
-          Fotos
+          Fotos do consultório
         </Heading>
       </Center>
       <Box>
@@ -34,6 +37,7 @@ const NextTemplateAboutUs = ({
           title={nextCallToActionItems[1].title}
           text={nextCallToActionItems[1].text}
           image={nextCallToActionItems[1].image}
+          imageAlt={nextCallToActionItems[1].imageAlt}
           textButton={nextCallToActionItems[1].textButton}
           directionMd={nextCallToActionItems[1].directionMd}
           width={nextCallToActionItems[1].width}

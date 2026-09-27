@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 
+import { SeoMeta } from '../../../data/seo'
 import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextAccordionImage, {
   NextAccordionImageProps
@@ -12,14 +13,16 @@ import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
 
 export type NextTemplateAboutUs = {
+  seo?: SeoMeta
   nextCallToActionItems: NextAccordionImageProps
 }
 
 const NextTemplateSpecialties = ({
-  nextCallToActionItems
+  nextCallToActionItems,
+  seo
 }: NextTemplateAboutUs) => {
   return (
-    <NextLayout>
+    <NextLayout {...seo}>
       {nextCallToActionItems.title === 'Dra. Rosane' && (
         <NextDoctoralia slug="rosane-lage" nome="Rosane Lage" />
       )}
@@ -31,6 +34,7 @@ const NextTemplateSpecialties = ({
         title={nextCallToActionItems.title}
         text={nextCallToActionItems.text}
         image={nextCallToActionItems.image}
+        imageAlt={nextCallToActionItems.imageAlt}
         textButton={nextCallToActionItems.textButton}
         directionMd={nextCallToActionItems.directionMd}
         width={nextCallToActionItems.width}
@@ -45,7 +49,7 @@ const NextTemplateSpecialties = ({
           <GridItem colSpan={2} display={['none', 'block']}>
             <Box>
               <Image
-                alt={'Sorriso'}
+                alt={'Mulher sorrindo e mostrando os dentes'}
                 src={'/images/sorriso.jpg'}
                 width={551}
                 height={1014}

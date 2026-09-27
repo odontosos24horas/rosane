@@ -1,12 +1,16 @@
 import React, { PropsWithChildren } from 'react'
 
 import Head from 'next/head'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Box } from '@chakra-ui/react'
+import { Box, VisuallyHidden } from '@chakra-ui/react'
 
-import { SITE_URL, WHATSAPP_URL, jsonLdNegocio } from '../../../data/site'
+import {
+  OG_IMAGE,
+  SITE_URL,
+  WHATSAPP_URL,
+  jsonLdNegocio
+} from '../../../data/site'
 import NextWhatsIcon from '../../atoms/nextWhatsIcon'
 import NextFooter from '../../organisms/nextFooter'
 import NextHeader from '../../organisms/nextHeader'
@@ -38,6 +42,12 @@ const NextLayout = ({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:site_name" content="Dra. Rosane Lage" />
+        <meta property="og:image" content={`${SITE_URL}${OG_IMAGE}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={title} />
+        <meta name="twitter:card" content="summary_large_image" />
         <script
           type="application/ld+json"
           // Conteúdo estático definido em src/data/site.ts — sem entrada de usuário.
@@ -55,15 +65,18 @@ const NextLayout = ({
         bottom="20px"
         right="20px"
       >
-        <Link href={nextSocialNetwork}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Falar com a Dra. Rosane pelo WhatsApp"
-          >
-            <NextWhatsIcon />
-          </a>
-        </Link>
+        <a
+          href={nextSocialNetwork}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Falar com a Dra. Rosane Lage pelo WhatsApp"
+          title="Falar com a Dra. Rosane Lage pelo WhatsApp"
+        >
+          <NextWhatsIcon />
+          <VisuallyHidden>
+            Falar com a Dra. Rosane Lage pelo WhatsApp
+          </VisuallyHidden>
+        </a>
       </Box>
     </>
   )

@@ -16,7 +16,8 @@ const ROTAS = [
   '/videos',
   '/contato',
   '/especialidades/danilo',
-  '/especialidades/rosane'
+  '/especialidades/rosane',
+  '/politica-de-privacidade'
 ]
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
